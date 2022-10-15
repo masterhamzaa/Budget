@@ -1,6 +1,6 @@
 import './App.css';
 
-function App() {
+function Application() {
   return (
     <div className="all">
       <i>H a m z a M i m i h</i>
@@ -8,4 +8,4 @@ function App() {
   );
 }
 
-export default App;
+export default Application;
