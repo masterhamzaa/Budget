@@ -12,7 +12,6 @@ function App() {
   // states
   const [load, setLoad] = useState(false);
   const [total, setTotal] = useState(0);
-  const [moins, setMoins] = useState(0);
   const [foods, setFoods] = useState(0);
   const [clothes, setClothes] = useState(0);
   const [books, setBooks] = useState(0);
@@ -97,6 +96,7 @@ function App() {
         case "store":
           setStore(parseFloat(e.target.value));
           break;
+          default :setTotal(0);
       }
     }
     if (isNaN(parseFloat(e.target.value))) {
@@ -121,6 +121,7 @@ function App() {
           setTotal(total + store);
           setStore(0);
           break;
+        default :setTotal(0);
       }
     }
   };
