@@ -7,6 +7,7 @@ import Statistic from "./compo/Statistic";
 import Expense from "./compo/Expense";
 import ChartStatistic from "./compo/ChartStatistic";
 import swal from "sweetalert";
+import Chart from 'chart.js/auto';
 
 function App() {
   // states
@@ -153,6 +154,7 @@ function App() {
           </div>
         </div>
       </section>
+
       <Footer />
     </>
   );
