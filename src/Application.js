@@ -8,7 +8,13 @@ import Expense from "./compo/Expense";
 import ChartStatistic from "./compo/ChartStatistic";
 import swal from "sweetalert";
 import Chart from 'chart.js/auto';
-
+// this declaration is just for fix deploy error
+new Chart("", {
+  // this is the string the constructor was registered at, ie Chart.controllers.MyType
+  type: 'bar',
+  data: [],
+  options: {}
+});
 
 function App() {
   // states
@@ -33,6 +39,7 @@ function App() {
       {
         label: "Expences",
         data: expences,
+        backgroundColor: ['#e91e63', '#00e676', '#ff5722', '#1e88e5', '#ffd600'],
       },
     ],
   });
@@ -49,6 +56,7 @@ function App() {
         {
           label: "Expences",
           data: expences,
+          backgroundColor: ['#e91e63', '#00e676', '#ff5722', '#1e88e5', '#ffd600'],
         },
       ],
     });
