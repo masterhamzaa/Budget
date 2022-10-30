@@ -9,6 +9,7 @@ import ChartStatistic from "./compo/ChartStatistic";
 import swal from "sweetalert";
 import Chart from 'chart.js/auto';
 
+
 function App() {
   // states
   const [load, setLoad] = useState(false);
@@ -71,7 +72,7 @@ function App() {
       setTotal(total + inc);
       swal(
         "Operation succesfull !",
-        `You are add ${inc} DH to your Account`,
+        `You're add ${inc} DH to your Account`,
         "success"
       );
     }
